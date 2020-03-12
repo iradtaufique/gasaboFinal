@@ -1,0 +1,24 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django = "*"
+
+psycopg2-binary = "*"
+django-crispy-forms = "*"
+django-mathfilters = "*"
+gunicorn = "*"
+dj-database-url = "*"
+whitenoise = "*"
+django-import-export = "*"
+
+[requires]
+python_version = "3.6"
+
+[packages.tablib]
+extras = [ "xlsx",]
+version = "*"

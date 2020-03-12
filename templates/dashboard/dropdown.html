@@ -1,0 +1,14 @@
+<option value="">---------</option>
+
+{% for sect in sectors %}
+<option value="{{ sect.pk }}">{{ sect.name }}</option>
+{% endfor %}
+
+{% for cel in cells %}
+<option value="{{ cel.pk }}">{{ cel.name }}</option>
+{% endfor %}
+
+{% for villa in villages %}
+<option value="{{ villa.pk }}">{{ villa.name }}</option>
+{% endfor %}
+

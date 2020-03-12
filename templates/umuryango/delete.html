@@ -1,0 +1,13 @@
+{% extends '_base.html' %}
+
+{% block content %}
+<div class="container">
+<div class="alert alert-danger w-1000 text-center" role="alert">
+        <form method="post" action="">
+        <p class="text-center">Are you sure you want to delete that record?</p>
+       {% csrf_token %}
+        <button type="submit" class="btn btn-sm btn-danger">Yes Delete.</button>
+    </form>
+</div>
+</div>
+{% endblock %}
